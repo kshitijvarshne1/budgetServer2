@@ -67,7 +67,6 @@ app.use((error, req, res, next) => {
 
 // server
 const PORT = 3000;
-app.listen(PORT, () => {
+app.listen(port, "0.0.0.0", function () {
   console.log(`Server running on port ${PORT}`);
 });
-// app.listen(PORT, "0.0.0.0");
